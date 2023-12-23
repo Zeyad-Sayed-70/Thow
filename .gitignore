@@ -2,6 +2,8 @@
 
 # dependencies
 /node_modules
+/server/node_modules
+/openai
 /.pnp
 .pnp.js
 .yarn/install-state.gz
@@ -27,6 +29,9 @@ yarn-error.log*
 
 # local env files
 .env*.local
+
+.env
+/server/.env
 
 # vercel
 .vercel
