@@ -1,0 +1,47 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.no-spin::-webkit-inner-spin-button,
+.no-spin::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.no-spin {
+  -moz-appearance: textfield;
+}
+
+.not-found::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url("/assets/owl_background.jpg");
+  background-size: cover;
+  filter: brightness(30%);
+  animation: lightning 4s infinite;
+  animation-timing-function: steps(1);
+}
+
+@keyframes lightning {
+  0% {
+    filter: brightness(30%);
+  }
+  50% {
+    filter: brightness(60%);
+  }
+  55% {
+    filter: brightness(30%);
+  }
+  58% {
+    filter: brightness(60%);
+  }
+  60% {
+    filter: brightness(30%);
+  }
+}
